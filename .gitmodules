@@ -1,0 +1,3 @@
+[submodule "qsharp-language"]
+	path = qsharp-language
+	url = git@github.com:microsoft/qsharp-language.git
