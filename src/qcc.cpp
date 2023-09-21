@@ -13,8 +13,8 @@
 #include <iostream>
 
 #include "antlr4-runtime.h"
-#include "../antlr4cpp_generated_src/QSharpLexer/QSharpLexer.h"
-#include "../antlr4cpp_generated_src/QSharpParser/QSharpParser.h"
+#include "QSharpLexer.h"
+#include "QSharpParser.h"
 
 using namespace antlrcpptest;
 using namespace antlr4;
