@@ -6,3 +6,4 @@ antlr4_runtime
 antlr4cpp_generated_src
 Makefile
 cmake_install.cmake
+qcc
