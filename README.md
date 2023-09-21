@@ -18,7 +18,7 @@ Notice here we have to pass `antlr4-parse` a `Parser.g4` and a `Lexer.g4` file, 
 antlr4 qsharp-language/Specifications/Language/5_Grammar/QSharpParser.g4 qsharp-language/Specifications/Language/5_Grammar/QSharpLexer.g4 -Dlanguage=Cpp -o parser
 ```
 
-# Build `qcc``
+# Build `qcc`
 ```
 cmake .
 make
