@@ -19,17 +19,24 @@
 using namespace qcc;
 using namespace antlr4;
 
-int main(int , const char **) {
-  ANTLRInputStream input("namespace QuantumHello {\
-\
-    open Microsoft.Quantum.Canon;\
-    open Microsoft.Quantum.Intrinsic;\
-    \
-    @EntryPoint()\
-    operation SayHello() : Unit {\
-        Message(\"Hello quantum world!\");\
-    }\
-}");
+int main(int argc, const char ** argv) {
+  // Read input file from argument
+  std::string inFile = "";
+  if( argc == 2 ) {
+    inFile = argv[1];
+  }
+  else {
+    std::cout << "Usage: ./qcc InputFile OutputFile\n";
+    return 1;
+  }
+
+  // Load the program into a buffer
+  std::ifstream t(inFile);
+  std::stringstream buffer;
+  buffer << t.rdbuf();
+
+
+  ANTLRInputStream input(buffer);
   QSharpLexer lexer(&input);
   CommonTokenStream tokens(&lexer);
 
