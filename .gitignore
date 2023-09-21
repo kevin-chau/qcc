@@ -2,3 +2,6 @@
 .vscode
 CMakeFiles
 CMakeCache.txt
+antlr4_runtime
+antlr4cpp_generated_src
+Makefile
