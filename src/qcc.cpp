@@ -16,7 +16,7 @@
 #include "QSharpLexer.h"
 #include "QSharpParser.h"
 
-using namespace antlrcpptest;
+using namespace qcc;
 using namespace antlr4;
 
 int main(int , const char **) {

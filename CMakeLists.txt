@@ -32,9 +32,9 @@ find_package(ANTLR REQUIRED)
 
 # Call macro to add lexer and grammar to your build dependencies.
 antlr_target(QSharpGrammarLexer QSharpLexer.g4 LEXER
-             PACKAGE antlrcpptest)
+             PACKAGE qcc)
 antlr_target(QSharpGrammarParser QSharpParser.g4 PARSER
-             PACKAGE antlrcpptest
+             PACKAGE qcc
              DEPENDS_ANTLR QSharpGrammarLexer
              COMPILE_FLAGS -lib ${ANTLR_QSharpGrammarLexer_OUTPUT_DIR})
 
