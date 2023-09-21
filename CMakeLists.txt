@@ -43,7 +43,7 @@ include_directories(${ANTLR_SampleGrammarLexer_OUTPUT_DIR})
 include_directories(${ANTLR_SampleGrammarParser_OUTPUT_DIR})
 
 # add generated grammar to demo binary target
-add_executable(demo main.cpp
+add_executable(qcc qcc.cpp
                ${ANTLR_SampleGrammarLexer_CXX_OUTPUTS}
                ${ANTLR_SampleGrammarParser_CXX_OUTPUTS})
-target_link_libraries(demo antlr4_static)
+target_link_libraries(qcc antlr4_static)
