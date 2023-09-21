@@ -31,19 +31,19 @@ set(ANTLR_EXECUTABLE antlr/antlr-4.13.1-complete.jar)
 find_package(ANTLR REQUIRED)
 
 # Call macro to add lexer and grammar to your build dependencies.
-antlr_target(SampleGrammarLexer QSharpLexer.g4 LEXER
+antlr_target(QSharpGrammarLexer QSharpLexer.g4 LEXER
              PACKAGE antlrcpptest)
-antlr_target(SampleGrammarParser QSharpParser.g4 PARSER
+antlr_target(QSharpGrammarParser QSharpParser.g4 PARSER
              PACKAGE antlrcpptest
-             DEPENDS_ANTLR SampleGrammarLexer
-             COMPILE_FLAGS -lib ${ANTLR_SampleGrammarLexer_OUTPUT_DIR})
+             DEPENDS_ANTLR QSharpGrammarLexer
+             COMPILE_FLAGS -lib ${ANTLR_QSharpGrammarLexer_OUTPUT_DIR})
 
 # include generated files in project environment
-include_directories(${ANTLR_SampleGrammarLexer_OUTPUT_DIR})
-include_directories(${ANTLR_SampleGrammarParser_OUTPUT_DIR})
+include_directories(${ANTLR_QSharpGrammarLexer_OUTPUT_DIR})
+include_directories(${ANTLR_QSharpGrammarParser_OUTPUT_DIR})
 
 # add generated grammar to demo binary target
 add_executable(qcc src/qcc.cpp
-               ${ANTLR_SampleGrammarLexer_CXX_OUTPUTS}
-               ${ANTLR_SampleGrammarParser_CXX_OUTPUTS})
+               ${ANTLR_QSharpGrammarLexer_CXX_OUTPUTS}
+               ${ANTLR_QSharpGrammarParser_CXX_OUTPUTS})
 target_link_libraries(qcc antlr4_static)
