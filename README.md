@@ -1,5 +1,5 @@
 # qcc
-Q# Compiler
+QCC, the Quantum Computing Compiler, compiles Q# programming language source code to QASM quantum computing assembly language. It is written in C++.
 
 # Parsing Q#
 For parsing, you will need ANTLR. You can easily install this with `pip`:
