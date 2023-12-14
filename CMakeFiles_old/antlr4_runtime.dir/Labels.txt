@@ -1,0 +1,13 @@
+# Target labels
+ antlr4_runtime
+# Source files and their labels
+/Users/kevinchau/qcc/CMakeFiles/antlr4_runtime
+/Users/kevinchau/qcc/CMakeFiles/antlr4_runtime.rule
+/Users/kevinchau/qcc/CMakeFiles/antlr4_runtime-complete.rule
+/Users/kevinchau/qcc/antlr4_runtime/src/antlr4_runtime-stamp/antlr4_runtime-build.rule
+/Users/kevinchau/qcc/antlr4_runtime/src/antlr4_runtime-stamp/antlr4_runtime-configure.rule
+/Users/kevinchau/qcc/antlr4_runtime/src/antlr4_runtime-stamp/antlr4_runtime-download.rule
+/Users/kevinchau/qcc/antlr4_runtime/src/antlr4_runtime-stamp/antlr4_runtime-install.rule
+/Users/kevinchau/qcc/antlr4_runtime/src/antlr4_runtime-stamp/antlr4_runtime-mkdir.rule
+/Users/kevinchau/qcc/antlr4_runtime/src/antlr4_runtime-stamp/antlr4_runtime-patch.rule
+/Users/kevinchau/qcc/antlr4_runtime/src/antlr4_runtime-stamp/antlr4_runtime-update.rule

@@ -1,0 +1,6 @@
+# Target labels
+ antlr4_runtime
+# Source files and their labels
+/Users/kevinchau/qcc/CMakeFiles/antlr4_runtime-build_static
+/Users/kevinchau/qcc/CMakeFiles/antlr4_runtime-build_static.rule
+/Users/kevinchau/qcc/antlr4_runtime/src/antlr4_runtime-stamp/antlr4_runtime-build_static.rule

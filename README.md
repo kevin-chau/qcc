@@ -28,3 +28,8 @@ make
 ```
 ./qcc
 ```
+
+# Parse input Q# program
+```
+./qcc
+```
